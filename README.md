@@ -55,8 +55,9 @@ test_acc = 8.1349%
 
 
 
-#Training
-ZSL_Train(Dateset, Splitmode, ImgFtSource, lambda1, lambda2, GPU_mode)
+Training
+---------
+>>ZSL_Train(Dateset, Splitmode, ImgFtSource, lambda1, lambda2, GPU_mode)
 is the command  to train the model using a particular setting. 
 % For example ZSL_Train('CUBird', 'Easy', 'DET', 100000, 10000, true), trains on the CUBirds dataset on the Easy split and using the detected part boxes. 
 , lambda1=100000, and lambda2=10000, and GPU_mode=true (using GPU mode for training). If false, the training is done on CPU.
